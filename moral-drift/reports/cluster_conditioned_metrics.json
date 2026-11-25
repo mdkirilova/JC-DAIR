@@ -1,0 +1,72 @@
+{
+  "description": "One neural network with a 9-feature dilemma and 3-bit cluster one-hot input",
+  "cluster_order": [
+    "western",
+    "eastern",
+    "southern"
+  ],
+  "label_order": [
+    "stay",
+    "swerve"
+  ],
+  "n_train": 4402,
+  "n_validation": 1099,
+  "n_test": 1376,
+  "selected_epoch": 160,
+  "overall_test_accuracy": 0.9411337209302325,
+  "overall_test_macro_f1": 0.9405443380932643,
+  "overall_test_loss": 0.13280588388442993,
+  "by_cluster": {
+    "western": {
+      "n_test": 459,
+      "accuracy": 0.954248366013072,
+      "macro_f1": 0.9536535289959946,
+      "always_majority_baseline_accuracy": 0.5577342047930284,
+      "majority_label_in_training": "stay",
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          245,
+          11
+        ],
+        [
+          10,
+          193
+        ]
+      ]
+    },
+    "eastern": {
+      "n_test": 458,
+      "accuracy": 0.9192139737991266,
+      "macro_f1": 0.9175533597030248,
+      "always_majority_baseline_accuracy": 0.5611353711790393,
+      "majority_label_in_training": "stay",
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          243,
+          14
+        ],
+        [
+          23,
+          178
+        ]
+      ]
+    },
+    "southern": {
+      "n_test": 459,
+      "accuracy": 0.9498910675381264,
+      "macro_f1": 0.9497957494971015,
+      "always_majority_baseline_accuracy": 0.5206971677559913,
+      "majority_label_in_training": "stay",
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          228,
+          11
+        ],
+        [
+          12,
+          208
+        ]
+      ]
+    }
+  }
+}
